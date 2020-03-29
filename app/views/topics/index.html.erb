@@ -1,15 +1,20 @@
-<div class = "menu">
+<div class = "topics">
   <h1>トピック一覧</h1>
   <ul>
     <% @topics.each do |topic| %>
-      <%= link_to topic.title %>
+      <%= link_to topic_path(topic.id) do%>
+        <%= topic.title %>(<%= topic.posts.count%>)
+      <% end %>
     <% end %>
   </ul>
 </div>
 
+<div class = "topics">
+  <h1>トピック新規登録</h1>
+  <%= form_for @newTopic, :url => {:action => 'create'} do |f| %>
+    <%= f.text_field :title %>
+    <%= f.submit %>
+  <% end %>
+</div>
 
-<h1>トピック新規登録</h1>
-<%= form_for @newTopic, :url => {:action => 'create'} do |f| %>
-  <%= f.text_field :title %>
-  <%= f.submit %>
-<% end %>
+
