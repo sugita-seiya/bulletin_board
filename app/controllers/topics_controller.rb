@@ -16,4 +16,8 @@ class TopicsController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    @topics =Topic.search(params[:keyword])
+  end
+
 end

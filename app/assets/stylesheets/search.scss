@@ -1,0 +1,24 @@
+.header{
+  .header__left{
+    position: absolute;
+    padding-top: 38px;
+    padding-left: 20%;
+    font-size: 30px;
+    a{
+      text-decoration:none;
+      color: sienna;
+    }
+    
+  }
+}
+
+.list_line{
+  padding:2% 0 0 10%;
+  .list_line_link{
+    color: #1800ae;
+    display: block;
+    .list_line_link_title{
+      font-size: 16px;
+    }
+  }
+}

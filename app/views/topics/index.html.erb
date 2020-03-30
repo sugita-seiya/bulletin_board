@@ -1,3 +1,9 @@
+
+<%= form_with(url:  search_topics_path(@topics.ids), local: true, method: :get, class: "search-form") do |form| %>
+  <%= form.text_field :keyword, placeholder: "キーワード入力", class: "search-input" %>
+  <%= form.submit "スレタイ検索", class: "search-btn" %>
+<% end %>
+
 <div class = "topics">
   <h1>トピック一覧</h1>
   <ul>

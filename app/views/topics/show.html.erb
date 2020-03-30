@@ -9,6 +9,7 @@
 
 
   <h3>新規書き込み</h3>
+  <%# <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form_for @newpost, :url => topic_posts_path(@topic) do |f| %>
   <%# <%= form_with @newpost  do |f| %>
     <p>お名前</p>
