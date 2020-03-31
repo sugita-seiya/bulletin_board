@@ -12,10 +12,12 @@
   <div class="list_line">
     <%= link_to topic_path(topic.id) do%>
       <div class="list_line_link_title">
-        <%= topic.title%>
+        <%= topic.title%>(<%= topic.posts.count%>)
       </div>
     <% end %>
-    <div class="list_line_info_container">2020年03月06日 17:54</div>
+    <div class="list_line_info_container">
+      <%= topic.updated_at.strftime("%Y-%m-%d %H:%M")%>
+    </div>
     </div>
   </div>
 <% end %>
