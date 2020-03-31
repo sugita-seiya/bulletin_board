@@ -2,6 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.header__logout{
+  position: absolute;
+  padding:36px 0 0 21%;
+  border-radius: 10px;
+  a{
+    text-decoration: none;
+    background-color: #ccffcc;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+  }
+}
 .topics__title{
   z-index: 1;
   width: 93%;
