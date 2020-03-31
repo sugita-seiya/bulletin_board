@@ -1,9 +1,11 @@
-## usersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-### Association
+## Overview(概要)
+- 5chのようなWeb掲示板
 
+## Features(機能)
+-  ログイン機能 (email + pass)
+-  閲覧・投稿機能
+-  スレッド機能
+-  検索機能
 
 ## topicsテーブル
 |Column|Type|Options|
